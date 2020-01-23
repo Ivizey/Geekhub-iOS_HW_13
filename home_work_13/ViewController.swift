@@ -7,14 +7,23 @@
 //
 
 import UIKit
+import Moya
 
 class ViewController: UIViewController {
+    
+    let provider = MoyaProvider<PrivatAPI>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.getRate()
+        }
     }
-
-
+    
+    private func getRate() {
+        provider.request(.getRate) { rates in
+            print(rates)
+        }
+    }
 }
 

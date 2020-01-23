@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		476AC38723D9E56100F31297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 476AC38523D9E56100F31297 /* Main.storyboard */; };
 		476AC38923D9E56300F31297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 476AC38823D9E56300F31297 /* Assets.xcassets */; };
 		476AC38C23D9E56300F31297 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 476AC38A23D9E56300F31297 /* LaunchScreen.storyboard */; };
+		47895D5F23D9EA8A00CC8D51 /* PrivatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47895D5E23D9EA8A00CC8D51 /* PrivatAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		476AC38823D9E56300F31297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		476AC38B23D9E56300F31297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		476AC38D23D9E56300F31297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47895D5E23D9EA8A00CC8D51 /* PrivatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatAPI.swift; sourceTree = "<group>"; };
 		B3428EF79E9A221DA9D6B7D8 /* Pods-home_work_13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home_work_13.debug.xcconfig"; path = "Target Support Files/Pods-home_work_13/Pods-home_work_13.debug.xcconfig"; sourceTree = "<group>"; };
 		FB96A8237CC6C622FA06B9D4 /* Pods-home_work_13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home_work_13.release.xcconfig"; path = "Target Support Files/Pods-home_work_13/Pods-home_work_13.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +50,6 @@
 				B3428EF79E9A221DA9D6B7D8 /* Pods-home_work_13.debug.xcconfig */,
 				FB96A8237CC6C622FA06B9D4 /* Pods-home_work_13.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,12 +77,21 @@
 				476AC37F23D9E56100F31297 /* AppDelegate.swift */,
 				476AC38123D9E56100F31297 /* SceneDelegate.swift */,
 				476AC38323D9E56100F31297 /* ViewController.swift */,
+				47895D6023D9EEFC00CC8D51 /* Service */,
 				476AC38523D9E56100F31297 /* Main.storyboard */,
 				476AC38823D9E56300F31297 /* Assets.xcassets */,
 				476AC38A23D9E56300F31297 /* LaunchScreen.storyboard */,
 				476AC38D23D9E56300F31297 /* Info.plist */,
 			);
 			path = home_work_13;
+			sourceTree = "<group>";
+		};
+		47895D6023D9EEFC00CC8D51 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				47895D5E23D9EA8A00CC8D51 /* PrivatAPI.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		EDCB778B9A6C45CD8BC05711 /* Frameworks */ = {
@@ -209,6 +219,7 @@
 			files = (
 				476AC38423D9E56100F31297 /* ViewController.swift in Sources */,
 				476AC38023D9E56100F31297 /* AppDelegate.swift in Sources */,
+				47895D5F23D9EA8A00CC8D51 /* PrivatAPI.swift in Sources */,
 				476AC38223D9E56100F31297 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
