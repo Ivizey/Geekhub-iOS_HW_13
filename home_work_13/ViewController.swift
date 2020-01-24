@@ -22,8 +22,30 @@ class ViewController: UIViewController {
     
     private func getRate() {
         provider.request(.getRate) { rates in
-            print(rates)
+            do {
+                let response = try rates
+                    .get()
+                    .filter(statusCode: 200)
+                let object = try response.map([Rate].self)
+                print(object)
+            } catch {
+                print(error)
+            }
         }
+    }
+}
+
+struct Rate: Decodable {
+    let currency: String
+    let baseCurrency: String
+    let buy: String
+    let sell: String
+    
+    enum CodingKeys: String, CodingKey {
+        case currency = "ccy"
+        case baseCurrency = "base_ccy"
+        case buy
+        case sell = "sale"
     }
 }
 

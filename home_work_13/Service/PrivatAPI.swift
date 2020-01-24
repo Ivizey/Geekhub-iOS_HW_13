@@ -15,15 +15,15 @@ enum PrivatAPI {
 
 extension PrivatAPI: TargetType {
     var baseURL: URL {
-        URL(string: "https://api.privatbank.ua/")!
+        URL(string: "https://api.privatbank.ua/p24api/")!
     }
     
     var path: String {
         switch self {
         case .getRate:
-            return "p24api/pubinfo"
+            return "pubinfo"
         case .getBranches:
-            return "p24api/pboffice"
+            return "pboffice"
         }
     }
     
@@ -36,12 +36,13 @@ extension PrivatAPI: TargetType {
     }
     
     var task: Task {
-        .requestPlain
+            return .requestParameters(parameters: ["exchange": "",
+                                                   "json": "",
+                                                   "coursid": "11"],
+                                      encoding: URLEncoding.queryString)
     }
     
     var headers: [String : String]? {
-        ["exchange": "",
-         "json": "",
-         "coursid": "11"]
+        return ["Content-type": "aplication/json"]
     }
 }
