@@ -36,10 +36,10 @@ extension PrivatAPI: TargetType {
     }
     
     var task: Task {
-            return .requestParameters(parameters: ["exchange": "",
-                                                   "json": "",
-                                                   "coursid": "11"],
-                                      encoding: URLEncoding.queryString)
+        return .requestParameters(parameters: ["exchange": "",
+                                               "json": "",
+                                               "coursid": "11"],
+                                  encoding: URLEncoding.queryString)
     }
     
     var headers: [String : String]? {

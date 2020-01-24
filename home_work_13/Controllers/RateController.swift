@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RateController.swift
 //  home_work_13
 //
 //  Created by Pavel Bondar on 23.01.2020.
@@ -9,7 +9,7 @@
 import UIKit
 import Moya
 
-class ViewController: UIViewController {
+class RateController: UIViewController {
     
     let provider = MoyaProvider<PrivatAPI>()
 
@@ -32,20 +32,6 @@ class ViewController: UIViewController {
                 print(error)
             }
         }
-    }
-}
-
-struct Rate: Decodable {
-    let currency: String
-    let baseCurrency: String
-    let buy: String
-    let sell: String
-    
-    enum CodingKeys: String, CodingKey {
-        case currency = "ccy"
-        case baseCurrency = "base_ccy"
-        case buy
-        case sell = "sale"
     }
 }
 

@@ -1,24 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PsI-E3-qMQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Курс валют-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RateController" customModule="home_work_13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Курс валют" id="prr-TJ-TUr">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="LBK-m0-tya"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2615.9420289855075" y="-174.10714285714286"/>
+        </scene>
+        <!--Відділення-->
+        <scene sceneID="PNS-8U-fsb">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWY-32-iHB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="V06-GJ-bKO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d0o-3u-HrQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3VK-9D-CHj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Відділення" id="Wvd-sZ-TWu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="iKB-3S-9pm"/>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2617.3913043478265" y="506.91964285714283"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6fM-Vw-ZXp">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ajw-Ps-wBP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController id="PsI-E3-qMQ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gfg-Iu-Sv9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="QLU-YS-oK2" kind="relationship" relationship="viewControllers" id="NVm-dH-Ocu"/>
+                        <segue destination="6Mj-vp-O7h" kind="relationship" relationship="viewControllers" id="CoS-AR-Bxy"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="789" y="182"/>
+        </scene>
+        <!--Курс валют-->
+        <scene sceneID="SBU-qr-ASu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QLU-YS-oK2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Курс валют" image="chart.bar" catalog="system" id="BKi-c7-WGK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YNg-IM-eY6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="J6R-lE-o1k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hpx-T2-6m0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1705.7971014492755" y="-174.10714285714286"/>
+        </scene>
+        <!--Відділення-->
+        <scene sceneID="hmN-Fm-YOW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Mj-vp-O7h" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Відділення" image="map" catalog="system" id="Qju-ui-NiK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fpt-ty-qtr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="V06-GJ-bKO" kind="relationship" relationship="rootViewController" id="LgL-eO-hlY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T4A-bh-klW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1707.2463768115942" y="506.91964285714283"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chart.bar" catalog="system" width="64" height="44"/>
+        <image name="map" catalog="system" width="64" height="56"/>
+    </resources>
 </document>
