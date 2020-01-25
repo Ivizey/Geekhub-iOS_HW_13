@@ -1,14 +1,14 @@
 //
-//  RateCell.swift
+//  CellForRate.swift
 //  home_work_13
 //
-//  Created by Pavel Bondar on 24.01.2020.
+//  Created by Pavel Bondar on 25.01.2020.
 //  Copyright © 2020 Pavel Bondar. All rights reserved.
 //
 
 import UIKit
 
-class RateCell: UITableViewCell {
+class CellForRate: UITableViewCell {
     @IBOutlet private weak var rateImage: UIImageView!
     @IBOutlet private weak var currencyLabel: UILabel!
     @IBOutlet private weak var buyLabel: UILabel!
@@ -22,12 +22,11 @@ class RateCell: UITableViewCell {
         currencyLabel.text = currency + "/" + baseCurrency
     }
     
-    func setBuyLabel(buy: String) {
-        buyLabel.text = "Купівля: \(buy)"
+    func setBuyLabel(buy: Double) {
+        buyLabel.text = "Купівля: " + String(format: "%.2f", buy)
     }
     
-    func setSellLabel(sell: String) {
-        sellLabel.text = "Продаж: \(sell)"
+    func setSellLabel(sell: Double) {
+        sellLabel.text = "Продаж: " + String(format: "%.2f", sell)
     }
-    
 }

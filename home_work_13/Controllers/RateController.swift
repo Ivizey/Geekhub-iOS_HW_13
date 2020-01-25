@@ -10,10 +10,10 @@ import UIKit
 import Moya
 
 class RateController: UIViewController {
-    private let images = ["bitcoin",
-                          "dollar",
-                          "euro",
-                          "rubli"]
+    private let images = ["dollarsign.circle",
+                          "eurosign.circle",
+                          "rublesign.circle",
+                          "bitcoinsign.circle"]
     private let provider = MoyaProvider<PrivatAPI>()
     private var rates = [Rate]()
 
@@ -35,9 +35,7 @@ class RateController: UIViewController {
                     .get()
                     .filter(statusCode: 200)
                 let object = try response.map([Rate].self)
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    self.rates = object
-                }
+                self.rates = object
                 print(object)
             } catch {
                 print(error)
@@ -46,18 +44,14 @@ class RateController: UIViewController {
     }
 }
 
-extension RateController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return rates.count
-        return 4
+extension RateController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        4
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "rateCell", for: indexPath) as! RateCell
-//        cell.setRateImage(image: UIImage(systemName: images[indexPath.row]) ?? UIImage())
-//        cell.setCurrencyLabel(currency: rates[indexPath.row].currency, baseCurrency: rates[indexPath.row].baseCurrency)
-//        cell.setBuyLabel(buy: rates[indexPath.row].buy)
-//        cell.setSellLabel(sell: rates[indexPath.row].sell)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RateCell", for: indexPath) as! CellForRate
+        cell.setRateImage(image: UIImage(systemName: images[indexPath.row]) ?? UIImage())
         return cell
     }
 }

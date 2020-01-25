@@ -18,7 +18,8 @@
 		47895D6223DB69A500CC8D51 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47895D6123DB69A500CC8D51 /* Rate.swift */; };
 		47895D6623DB73F900CC8D51 /* BranchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47895D6523DB73F900CC8D51 /* BranchController.swift */; };
 		47895D6823DB744C00CC8D51 /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47895D6723DB744C00CC8D51 /* Branch.swift */; };
-		47895D6A23DB809A00CC8D51 /* RateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47895D6923DB809A00CC8D51 /* RateCell.swift */; };
+		47895D6F23DCC1EB00CC8D51 /* CellForRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47895D6E23DCC1EB00CC8D51 /* CellForRate.swift */; };
+		47895D7123DCD42200CC8D51 /* CellForBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47895D7023DCD42200CC8D51 /* CellForBranch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +36,8 @@
 		47895D6123DB69A500CC8D51 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
 		47895D6523DB73F900CC8D51 /* BranchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchController.swift; sourceTree = "<group>"; };
 		47895D6723DB744C00CC8D51 /* Branch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
-		47895D6923DB809A00CC8D51 /* RateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCell.swift; sourceTree = "<group>"; };
+		47895D6E23DCC1EB00CC8D51 /* CellForRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForRate.swift; sourceTree = "<group>"; };
+		47895D7023DCD42200CC8D51 /* CellForBranch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForBranch.swift; sourceTree = "<group>"; };
 		B3428EF79E9A221DA9D6B7D8 /* Pods-home_work_13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home_work_13.debug.xcconfig"; path = "Target Support Files/Pods-home_work_13/Pods-home_work_13.debug.xcconfig"; sourceTree = "<group>"; };
 		FB96A8237CC6C622FA06B9D4 /* Pods-home_work_13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home_work_13.release.xcconfig"; path = "Target Support Files/Pods-home_work_13/Pods-home_work_13.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +127,8 @@
 		47895D6B23DB809E00CC8D51 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				47895D6923DB809A00CC8D51 /* RateCell.swift */,
+				47895D6E23DCC1EB00CC8D51 /* CellForRate.swift */,
+				47895D7023DCD42200CC8D51 /* CellForBranch.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -256,9 +259,10 @@
 				476AC38423D9E56100F31297 /* RateController.swift in Sources */,
 				476AC38023D9E56100F31297 /* AppDelegate.swift in Sources */,
 				47895D5F23D9EA8A00CC8D51 /* PrivatAPI.swift in Sources */,
+				47895D7123DCD42200CC8D51 /* CellForBranch.swift in Sources */,
 				47895D6623DB73F900CC8D51 /* BranchController.swift in Sources */,
 				476AC38223D9E56100F31297 /* SceneDelegate.swift in Sources */,
-				47895D6A23DB809A00CC8D51 /* RateCell.swift in Sources */,
+				47895D6F23DCC1EB00CC8D51 /* CellForRate.swift in Sources */,
 				47895D6223DB69A500CC8D51 /* Rate.swift in Sources */,
 				47895D6823DB744C00CC8D51 /* Branch.swift in Sources */,
 			);
