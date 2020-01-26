@@ -10,6 +10,7 @@ import UIKit
 import Moya
 
 class RateController: UIViewController {
+    @IBOutlet private weak var rateTableView: UITableView!
     private let images = ["dollarsign.circle",
                           "eurosign.circle",
                           "rublesign.circle",
@@ -19,7 +20,7 @@ class RateController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.async {
             self.getRate()
         }
     }
@@ -35,10 +36,12 @@ class RateController: UIViewController {
                     .get()
                     .filter(statusCode: 200)
                 let object = try response.map([Rate].self)
-                self.rates = object
-                print(object)
+                DispatchQueue.main.async {
+                    self.rates = object
+                    self.rateTableView.reloadData()
+                }
             } catch {
-                print(error)
+                print(error.localizedDescription)
             }
         }
     }
@@ -46,12 +49,16 @@ class RateController: UIViewController {
 
 extension RateController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        4
+        rates.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let rate = rates[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "RateCell", for: indexPath) as! CellForRate
         cell.setRateImage(image: UIImage(systemName: images[indexPath.row]) ?? UIImage())
+        cell.setCurrencyLabel(currency: rate.currency, baseCurrency: rate.baseCurrency)
+        cell.setBuyLabel(buy: rate.buy)
+        cell.setSellLabel(sell: rate.sell)
         return cell
     }
 }
