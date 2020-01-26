@@ -10,31 +10,40 @@ import UIKit
 import Moya
 
 class BranchController: UIViewController {
+    @IBOutlet private weak var branchTableView: UITableView!
     private let city = ["Киев",
                         "Николаев",
                         "Черкассы",
                         "Ровно"]
     private let provider = MoyaProvider<PrivatAPI>()
+    private var branches = [Branch]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        getBranch()
+        DispatchQueue.main.async {
+            self.getBranch(search: nil)
+        }
     }
     
-    private func getBranch() {
-        provider.request(.getBranches(search: "Киев") ) { rates in
+    @IBAction func searchCityButton(_ sender: UIBarButtonItem) {
+        createAlert()
+    }
+    
+    private func getBranch(search: String?) {
+        provider.request(.getBranches(search: search ?? "Киев") ) { rates in
             do {
                 let response = try rates
                     .get()
                     .filter(statusCode: 200)
                 let object = try response.map([Branch].self)
-                print(object)
+                DispatchQueue.main.async {
+                    self.branches = object
+                    self.branchTableView.reloadData()
+                }
             } catch {
-                print(error)
+                print(error.localizedDescription)
             }
         }
-    }
-    @IBAction func searchCityButton(_ sender: UIBarButtonItem) {
     }
     
     private func createAlert() {
@@ -45,6 +54,23 @@ class BranchController: UIViewController {
         pickerFrame.delegate = self
         alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
         self.present(alert,animated: true, completion: nil )
+    }
+}
+
+extension BranchController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return branches.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let branch = branches[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellForBranch", for: indexPath) as! CellForBranch
+        cell.setNameLabel(name: branch.name)
+        cell.cityLabel(city: branch.city)
+        cell.phoneLabel(phone: branch.phone)
+        cell.emailLabel(email: branch.email)
+        cell.addressLabel(address: branch.address)
+        return cell
     }
 }
 
@@ -62,6 +88,6 @@ extension BranchController:  UIPickerViewDataSource, UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
+        getBranch(search: city[row])
     }
 }
