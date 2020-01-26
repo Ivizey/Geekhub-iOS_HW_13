@@ -35,7 +35,7 @@ public final class CancellableToken: Cancellable, CustomDebugStringConvertible {
 
     public fileprivate(set) var isCancelled = false
 
-    fileprivate var lock: DispatchSemaphore = DispatchSemaphore(value: 1)
+    fileprivate var lock = DispatchSemaphore(value: 1)
 
     public func cancel() {
         _ = lock.wait(timeout: DispatchTime.distantFuture)
@@ -64,7 +64,6 @@ public final class CancellableToken: Cancellable, CustomDebugStringConvertible {
         }
         return request.debugDescription
     }
-
 }
 
 internal typealias RequestableCompletion = (HTTPURLResponse?, URLRequest?, Data?, Swift.Error?) -> Void

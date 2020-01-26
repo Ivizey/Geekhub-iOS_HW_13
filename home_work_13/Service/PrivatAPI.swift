@@ -17,7 +17,7 @@ extension PrivatAPI: TargetType {
     var baseURL: URL {
         URL(string: "https://api.privatbank.ua/p24api/")!
     }
-    
+
     var path: String {
         switch self {
         case .getRate:
@@ -26,15 +26,15 @@ extension PrivatAPI: TargetType {
             return "pboffice"
         }
     }
-    
+
     var method: Method {
         .get
     }
-    
+
     var sampleData: Data {
         Data()
     }
-    
+
     var task: Task {
         switch self {
         case .getRate:
@@ -49,8 +49,8 @@ extension PrivatAPI: TargetType {
                                       encoding: URLEncoding.queryString)
         }
     }
-    
-    var headers: [String : String]? {
+
+    var headers: [String: String]? {
         return ["Content-type": "aplication/json"]
     }
 }

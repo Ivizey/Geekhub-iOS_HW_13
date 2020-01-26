@@ -76,7 +76,7 @@ open class NetworkReachabilityManager {
     }
 
     /// The dispatch queue to execute the `listener` closure on.
-    open var listenerQueue: DispatchQueue = DispatchQueue.main
+    open var listenerQueue = DispatchQueue.main
 
     /// A closure executed when the network reachability status changes.
     open var listener: Listener?
@@ -118,8 +118,8 @@ open class NetworkReachabilityManager {
         address.sin_family = sa_family_t(AF_INET)
 
         guard let reachability = withUnsafePointer(to: &address, { pointer in
-            return pointer.withMemoryRebound(to: sockaddr.self, capacity: MemoryLayout<sockaddr>.size) {
-                return SCNetworkReachabilityCreateWithAddress(nil, $0)
+            pointer.withMemoryRebound(to: sockaddr.self, capacity: MemoryLayout<sockaddr>.size) {
+                SCNetworkReachabilityCreateWithAddress(nil, $0)
             }
         }) else { return nil }
 
@@ -148,8 +148,7 @@ open class NetworkReachabilityManager {
         context.info = Unmanaged.passUnretained(self).toOpaque()
 
         let callbackEnabled = SCNetworkReachabilitySetCallback(
-            reachability,
-            { (_, flags, info) in
+            reachability, { _, flags, info in
                 let reachability = Unmanaged<NetworkReachabilityManager>.fromOpaque(info!).takeUnretainedValue()
                 reachability.notifyListener(flags)
             },
@@ -221,8 +220,7 @@ extension NetworkReachabilityManager.NetworkReachabilityStatus: Equatable {}
 public func ==(
     lhs: NetworkReachabilityManager.NetworkReachabilityStatus,
     rhs: NetworkReachabilityManager.NetworkReachabilityStatus)
-    -> Bool
-{
+    -> Bool {
     switch (lhs, rhs) {
     case (.unknown, .unknown):
         return true

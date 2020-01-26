@@ -14,23 +14,23 @@ class CellForBranch: UITableViewCell {
     @IBOutlet private weak var phoneLabel: UILabel!
     @IBOutlet private weak var emailLabel: UILabel!
     @IBOutlet private weak var addressLabel: UILabel!
-    
+
     func setNameLabel(name: String) {
         nameLabel.text = name
     }
-    
+
     func cityLabel(city: String) {
         cityLabel.text = "Місто \(city)"
     }
-    
+
     func phoneLabel(phone: String) {
         phoneLabel.text = "Телефон: \(phone)"
     }
-    
+
     func emailLabel(email: String) {
         emailLabel.text = "Ел.пошта: \(email)"
     }
-    
+
     func addressLabel(address: String) {
         addressLabel.text = "Адреса: \(address)"
     }

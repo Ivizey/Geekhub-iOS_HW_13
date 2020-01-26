@@ -119,7 +119,7 @@ open class MultipartFormData {
         ///   - https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Streams/Articles/ReadingInputStreams.html
         ///
 
-        self.streamBufferSize = 1024
+        self.streamBufferSize = 1_024
     }
 
     // MARK: - Body Parts
@@ -275,8 +275,7 @@ open class MultipartFormData {
             }
 
             bodyContentLength = fileSize.uint64Value
-        }
-        catch {
+        } catch {
             setBodyPartError(withReason: .bodyPartFileSizeQueryFailedWithError(forURL: fileURL, error: error))
             return
         }
@@ -312,8 +311,7 @@ open class MultipartFormData {
         withLength length: UInt64,
         name: String,
         fileName: String,
-        mimeType: String)
-    {
+        mimeType: String) {
         let headers = contentHeaders(withName: name, fileName: fileName, mimeType: mimeType)
         append(stream, withLength: length, headers: headers)
     }

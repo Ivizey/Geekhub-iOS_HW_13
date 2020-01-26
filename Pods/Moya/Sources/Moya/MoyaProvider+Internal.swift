@@ -20,7 +20,10 @@ extension Method {
 /// Internal extension to keep the inner-workings outside the main Moya.swift file.
 public extension MoyaProvider {
     /// Performs normal requests.
-    func requestNormal(_ target: Target, callbackQueue: DispatchQueue?, progress: Moya.ProgressBlock?, completion: @escaping Moya.Completion) -> Cancellable {
+    func requestNormal(_ target: Target,
+                       callbackQueue: DispatchQueue?,
+                       progress: Moya.ProgressBlock?,
+                       completion: @escaping Moya.Completion) -> Cancellable {
         let endpoint = self.endpoint(target)
         let stubBehavior = self.stubClosure(target)
         let cancellableToken = CancellableWrapper()

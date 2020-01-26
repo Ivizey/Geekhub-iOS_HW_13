@@ -29,7 +29,6 @@ public struct MultipartFormData {
 
     /// The MIME type
     public let mimeType: String?
-
 }
 
 // MARK: RequestMultipartFormData appending
@@ -55,7 +54,11 @@ internal extension RequestMultipartFormData {
     }
 
     func append(stream: InputStream, length: UInt64, bodyPart: MultipartFormData) {
-        append(stream, withLength: length, name: bodyPart.name, fileName: bodyPart.fileName ?? "", mimeType: bodyPart.mimeType ?? "")
+        append(stream,
+               withLength: length,
+               name: bodyPart.name,
+               fileName: bodyPart.fileName ?? "",
+               mimeType: bodyPart.mimeType ?? "")
     }
 
     func applyMoyaMultipartFormData(_ multipartBody: [Moya.MultipartFormData]) {

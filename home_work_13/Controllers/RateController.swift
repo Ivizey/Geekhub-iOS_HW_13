@@ -24,11 +24,11 @@ class RateController: UIViewController {
             self.getRate()
         }
     }
-    
+
     @IBAction private func refreshButtonAction(_ sender: UIBarButtonItem) {
         getRate()
     }
-    
+
     private func getRate() {
         provider.request(.getRate) { rates in
             do {
@@ -51,10 +51,11 @@ extension RateController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         rates.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let rate = rates[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RateCell", for: indexPath) as! CellForRate
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "RateCell",
+                                                       for: indexPath) as? CellForRate else { return UITableViewCell() }
         cell.setRateImage(image: UIImage(systemName: images[indexPath.row]) ?? UIImage())
         cell.setCurrencyLabel(currency: rate.currency, baseCurrency: rate.baseCurrency)
         cell.setBuyLabel(buy: rate.buy)

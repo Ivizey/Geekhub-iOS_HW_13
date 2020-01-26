@@ -157,7 +157,7 @@ open class MoyaProvider<Target: TargetType>: MoyaProviderType {
     // swiftlint:enable function_parameter_count
 }
 
-/// Mark: Stubbing
+// MARK: Stubbing
 
 /// Controls how stub responses are returned.
 public enum StubBehavior {
@@ -189,7 +189,7 @@ public extension MoyaProvider {
 
     /// Return a response after a delay.
     final class func delayedStub(_ seconds: TimeInterval) -> (Target) -> Moya.StubBehavior {
-        return { _ in return .delayed(seconds: seconds) }
+        return { _ in .delayed(seconds: seconds) }
     }
 }
 

@@ -17,4 +17,4 @@ struct Branch: Decodable {
     let phone: String
     let email: String
     let name: String
-} 
+}

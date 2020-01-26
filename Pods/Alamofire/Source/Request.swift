@@ -161,8 +161,7 @@ open class Request {
         user: String,
         password: String,
         persistence: URLCredential.Persistence = .forSession)
-        -> Self
-    {
+        -> Self {
         let credential = URLCredential(user: user, password: password, persistence: persistence)
         return authenticate(usingCredential: credential)
     }
@@ -320,7 +319,7 @@ extension Request: CustomDebugStringConvertible {
 
         var headers: [AnyHashable: Any] = [:]
 
-        session.configuration.httpAdditionalHeaders?.filter {  $0.0 != AnyHashable("Cookie") }
+        session.configuration.httpAdditionalHeaders?.filter { $0.0 != AnyHashable("Cookie") }
                                                     .forEach { headers[$0.0] = $0.1 }
 
         request.allHTTPHeaderFields?.filter { $0.0 != "Cookie" }
@@ -544,8 +543,7 @@ open class DownloadRequest: Request {
     open class func suggestedDownloadDestination(
         for directory: FileManager.SearchPathDirectory = .documentDirectory,
         in domain: FileManager.SearchPathDomainMask = .userDomainMask)
-        -> DownloadFileDestination
-    {
+        -> DownloadFileDestination {
         return { temporaryURL, response in
             let directoryURLs = FileManager.default.urls(for: directory, in: domain)
 
