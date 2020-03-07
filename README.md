@@ -1,5 +1,5 @@
 # Exchange rate(geekhub IOS home work #13)
-
+A mobile application to keep track of the current exchange rate, as well as view a list of offices located in a particular city. Data is provided by Privat Bank using an open API
 <p align="center">
     <img src="https://github.com/Ivizey/Geekhub-iOS_HW_13/blob/master/images/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-03-06%20at%2016.47.42.png" width="200">
     <img src="https://github.com/Ivizey/Geekhub-iOS_HW_13/blob/master/images/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-03-06%20at%2016.47.50.png" width="200">
