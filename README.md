@@ -106,5 +106,6 @@ var task: Task {
 
 ## Built With
 * [Moya](https://github.com/Moya/Moya) - Network abstraction layer written in Swift.
+* [Swiftlint](https://github.com/realm/SwiftLint) - A tool to enforce Swift style and conventions.
 * [UIKit](https://developer.apple.com/documentation/uikit) -  Construct and manage a graphical, event-driven user interface for your iOS or tvOS app. 
 * [Privat24 API](https://api.privatbank.ua)
