@@ -63,6 +63,99 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4749D5F024CEB38800797764 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				476AC37F23D9E56100F31297 /* AppDelegate.swift */,
+				476AC38123D9E56100F31297 /* SceneDelegate.swift */,
+				476AC38D23D9E56300F31297 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4749D5F124CEB3DB00797764 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				476AC38523D9E56100F31297 /* Main.storyboard */,
+				476AC38A23D9E56300F31297 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4749D5F224CEB3E900797764 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				476AC38823D9E56300F31297 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4749D5F324CEB3FB00797764 /* RateModule */ = {
+			isa = PBXGroup;
+			children = (
+				4749D5F624CEB43300797764 /* Model */,
+				4749D5F524CEB42A00797764 /* View */,
+				4749D5F724CEB43D00797764 /* ViewModels */,
+			);
+			path = RateModule;
+			sourceTree = "<group>";
+		};
+		4749D5F424CEB41800797764 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				47895D6E23DCC1EB00CC8D51 /* CellForRate.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4749D5F524CEB42A00797764 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				476AC38323D9E56100F31297 /* RateController.swift */,
+				4749D5F424CEB41800797764 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4749D5F624CEB43300797764 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47895D6123DB69A500CC8D51 /* Rate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4749D5F724CEB43D00797764 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4749D5F824CEB48A00797764 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47895D6523DB73F900CC8D51 /* BranchController.swift */,
+				47895D6B23DB809E00CC8D51 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4749D5F924CEB49C00797764 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47895D6723DB744C00CC8D51 /* Branch.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4749D5FA24CEB4A500797764 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		476AC37323D9E56100F31297 = {
 			isa = PBXGroup;
 			children = (
@@ -84,16 +177,12 @@
 		476AC37E23D9E56100F31297 /* home_work_13 */ = {
 			isa = PBXGroup;
 			children = (
-				476AC37F23D9E56100F31297 /* AppDelegate.swift */,
-				476AC38123D9E56100F31297 /* SceneDelegate.swift */,
-				47895D6B23DB809E00CC8D51 /* Cells */,
-				47895D6423DB6EF400CC8D51 /* Controllers */,
-				47895D6323DB69BD00CC8D51 /* Models */,
+				4749D5F024CEB38800797764 /* Application */,
+				4749D5F324CEB3FB00797764 /* RateModule */,
+				47895D6423DB6EF400CC8D51 /* DepartamentModule */,
 				47895D6023D9EEFC00CC8D51 /* Service */,
-				476AC38523D9E56100F31297 /* Main.storyboard */,
-				476AC38823D9E56300F31297 /* Assets.xcassets */,
-				476AC38A23D9E56300F31297 /* LaunchScreen.storyboard */,
-				476AC38D23D9E56300F31297 /* Info.plist */,
+				4749D5F124CEB3DB00797764 /* Storyboards */,
+				4749D5F224CEB3E900797764 /* Resources */,
 			);
 			path = home_work_13;
 			sourceTree = "<group>";
@@ -106,31 +195,22 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		47895D6323DB69BD00CC8D51 /* Models */ = {
+		47895D6423DB6EF400CC8D51 /* DepartamentModule */ = {
 			isa = PBXGroup;
 			children = (
-				47895D6123DB69A500CC8D51 /* Rate.swift */,
-				47895D6723DB744C00CC8D51 /* Branch.swift */,
+				4749D5F924CEB49C00797764 /* Model */,
+				4749D5F824CEB48A00797764 /* View */,
+				4749D5FA24CEB4A500797764 /* ViewModels */,
 			);
-			path = Models;
+			path = DepartamentModule;
 			sourceTree = "<group>";
 		};
-		47895D6423DB6EF400CC8D51 /* Controllers */ = {
+		47895D6B23DB809E00CC8D51 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				476AC38323D9E56100F31297 /* RateController.swift */,
-				47895D6523DB73F900CC8D51 /* BranchController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		47895D6B23DB809E00CC8D51 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				47895D6E23DCC1EB00CC8D51 /* CellForRate.swift */,
 				47895D7023DCD42200CC8D51 /* CellForBranch.swift */,
 			);
-			path = Cells;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		EDCB778B9A6C45CD8BC05711 /* Frameworks */ = {
@@ -430,7 +510,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z67C29K2Q6;
-				INFOPLIST_FILE = home_work_13/Info.plist;
+				INFOPLIST_FILE = home_work_13/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,7 +529,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z67C29K2Q6;
-				INFOPLIST_FILE = home_work_13/Info.plist;
+				INFOPLIST_FILE = home_work_13/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
