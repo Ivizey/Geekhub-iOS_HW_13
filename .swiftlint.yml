@@ -1,5 +1,16 @@
 ignores_function_declarations: true
 ignores_comments: true
+line_length:
+  warning: 120
+  ignores_function_declarations: true
+  ignores_comments: true
+  ignores_interpolated_strings: true
+  ignores_urls: true
+
+disabled_rules:
+  - colon
+  - comma
+  - control_statement
 
 opt_in_rules:
   - closure_end_indentation
@@ -9,6 +20,7 @@ opt_in_rules:
   - vertical_whitespace_closing_braces
   - number_separator
   - empty_count
+  - missing_docs
   - empty_string
   - explicit_init
   - fatal_error_message
@@ -33,6 +45,12 @@ identifier_name:
     - id
     - x
     - y
+
+excluded: 
+  - Carthage
+  - Pods
+  - Source/ExcludedFolder
+  - Source/ExcludedFile.swift
 
 colon:
   flexible_right_spacing: true
