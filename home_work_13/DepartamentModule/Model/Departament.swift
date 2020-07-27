@@ -1,5 +1,5 @@
 //
-//  Branch.swift
+//  Departament.swift
 //  home_work_13
 //
 //  Created by Pavel Bondar on 24.01.2020.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Branch: Decodable {
+struct Departament: Decodable {
     let country: String
     let state: String
     let city: String

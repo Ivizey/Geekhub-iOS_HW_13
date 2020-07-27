@@ -16,7 +16,7 @@ class BranchController: UIViewController {
                         "Черкассы",
                         "Ровно"]
     private let provider = MoyaProvider<PrivatAPI>()
-    private var branches = [Branch]()
+    private var branches = [Departament]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +30,12 @@ class BranchController: UIViewController {
     }
 
     private func getBranch(search: String?) {
-        provider.request(.getBranches(search: search ?? "Киев") ) { rates in
+        provider.request(.getDepartament(search: search ?? "Киев") ) { rates in
             do {
                 let response = try rates
                     .get()
                     .filter(statusCode: 200)
-                let object = try response.map([Branch].self)
+                let object = try response.map([Departament].self)
                 DispatchQueue.main.async {
                     self.branches = object
                     self.branchTableView.reloadData()
