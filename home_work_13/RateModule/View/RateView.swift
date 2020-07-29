@@ -22,7 +22,7 @@ class RateView: UIViewController {
         viewModel.fetchRateViewModels().observeOn(MainScheduler.instance)
         .bind(to: rateTableView.rx.items(cellIdentifier: "rateCell")) { _, viewModel, cell in
             cell.imageView?.image = viewModel.displayImage
-            cell.textLabel?.text = viewModel.displayСurrency
+            cell.textLabel?.attributedText = viewModel.displayСurrency
             cell.detailTextLabel?.numberOfLines = 0
             cell.detailTextLabel?.text = viewModel.displayRate
         }
