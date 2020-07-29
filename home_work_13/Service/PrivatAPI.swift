@@ -41,7 +41,7 @@ extension PrivatAPI: TargetType {
             return .requestParameters(parameters: ["exchange": "", "json": "", "coursid": "11"],
                                       encoding: URLEncoding.queryString)
         case .getDepartament(let search):
-            return .requestParameters(parameters: ["json": "", "city": search, "address": ""],
+            return .requestParameters(parameters: ["json": "", "city": search],
                                       encoding: URLEncoding.queryString)
         }
     }

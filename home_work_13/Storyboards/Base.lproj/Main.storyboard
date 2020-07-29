@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NwU-yF-18L">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="rateCell" textLabel="wqb-rV-4YQ" detailTextLabel="db3-xH-bNh" style="IBUITableViewCellStyleSubtitle" id="JZ3-L8-8JI">
@@ -64,82 +64,43 @@
             </objects>
             <point key="canvasLocation" x="2615.9420289855075" y="-174.10714285714286"/>
         </scene>
-        <!--Відділення-->
+        <!--Departament View-->
         <scene sceneID="PNS-8U-fsb">
             <objects>
-                <viewController id="V06-GJ-bKO" customClass="BranchController" customModule="home_work_13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="V06-GJ-bKO" customClass="DepartamentView" customModule="home_work_13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d0o-3u-HrQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IIG-hl-za3">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IIG-hl-za3">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellForBranch" id="JFN-0U-nud" customClass="CellForBranch" customModule="home_work_13" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="departamentCell" textLabel="tRC-1U-yoR" detailTextLabel="xFR-EJ-dgw" style="IBUITableViewCellStyleSubtitle" id="aba-T0-vvw">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JFN-0U-nud" id="iSc-fz-UyF">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aba-T0-vvw" id="TOh-o3-WIY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Южное отд., Отделение №30" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwO-dA-4SD">
-                                                    <rect key="frame" x="20" y="11" width="374" height="26.5"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tRC-1U-yoR">
+                                                    <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телефон: 8(056)373-33-54, 373-33-56" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gr-pV-6zq">
-                                                    <rect key="frame" x="20" y="88" width="313" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ел.пошта: julija.tverdokhlebova@pbank.com.ua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05j-EZ-n7I">
-                                                    <rect key="frame" x="20" y="117" width="363" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вулиця: ул Титова 29-М" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pab-QI-i7z">
-                                                    <rect key="frame" x="20" y="146" width="192" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Місто: Днепропетровск" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rND-Ia-DuB">
-                                                    <rect key="frame" x="20" y="59" width="189" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xFR-EJ-dgw">
+                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="YwO-dA-4SD" firstAttribute="width" secondItem="iSc-fz-UyF" secondAttribute="width" multiplier="0.903382" id="BvQ-BK-GEx"/>
-                                                <constraint firstItem="rND-Ia-DuB" firstAttribute="top" secondItem="YwO-dA-4SD" secondAttribute="bottom" constant="21.5" id="ELR-qE-XeF"/>
-                                                <constraint firstItem="Pab-QI-i7z" firstAttribute="top" secondItem="05j-EZ-n7I" secondAttribute="bottom" constant="8" id="Kff-m5-r8S"/>
-                                                <constraint firstItem="Pab-QI-i7z" firstAttribute="leading" secondItem="05j-EZ-n7I" secondAttribute="leading" id="RS7-pu-9h2"/>
-                                                <constraint firstItem="7gr-pV-6zq" firstAttribute="top" secondItem="rND-Ia-DuB" secondAttribute="bottom" constant="8" id="Uu7-Fx-1AV"/>
-                                                <constraint firstItem="rND-Ia-DuB" firstAttribute="leading" secondItem="YwO-dA-4SD" secondAttribute="leading" id="YDJ-1S-Qk1"/>
-                                                <constraint firstItem="YwO-dA-4SD" firstAttribute="leading" secondItem="iSc-fz-UyF" secondAttribute="leading" constant="20" id="doZ-ze-fsv"/>
-                                                <constraint firstItem="7gr-pV-6zq" firstAttribute="leading" secondItem="rND-Ia-DuB" secondAttribute="leading" id="hVm-me-Xx7"/>
-                                                <constraint firstItem="05j-EZ-n7I" firstAttribute="top" secondItem="7gr-pV-6zq" secondAttribute="bottom" constant="8" id="mKt-oR-ssN"/>
-                                                <constraint firstItem="YwO-dA-4SD" firstAttribute="top" secondItem="iSc-fz-UyF" secondAttribute="top" constant="11" id="nzg-Db-lQF"/>
-                                                <constraint firstItem="05j-EZ-n7I" firstAttribute="leading" secondItem="7gr-pV-6zq" secondAttribute="leading" id="s3z-98-VDS"/>
-                                            </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="addressLabel" destination="Pab-QI-i7z" id="xDl-t5-9ib"/>
-                                            <outlet property="cityLabel" destination="rND-Ia-DuB" id="Jfr-6A-03e"/>
-                                            <outlet property="emailLabel" destination="05j-EZ-n7I" id="f26-T9-Gvs"/>
-                                            <outlet property="nameLabel" destination="YwO-dA-4SD" id="Tkp-dg-YrZ"/>
-                                            <outlet property="phoneLabel" destination="7gr-pV-6zq" id="tXe-pB-JFf"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="V06-GJ-bKO" id="SPg-iH-8mC"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -151,15 +112,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3VK-9D-CHj"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Відділення" id="Wvd-sZ-TWu">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="iKB-3S-9pm">
-                            <connections>
-                                <action selector="searchCityButton:" destination="V06-GJ-bKO" id="3RH-4Z-iPX"/>
-                            </connections>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" id="Wvd-sZ-TWu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="iKB-3S-9pm"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="branchTableView" destination="IIG-hl-za3" id="T2p-2w-TEv"/>
+                        <outlet property="departamentTableView" destination="IIG-hl-za3" id="T2p-2w-TEv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWY-32-iHB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -176,8 +133,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="QLU-YS-oK2" kind="relationship" relationship="viewControllers" id="NVm-dH-Ocu"/>
                         <segue destination="6Mj-vp-O7h" kind="relationship" relationship="viewControllers" id="CoS-AR-Bxy"/>
+                        <segue destination="QLU-YS-oK2" kind="relationship" relationship="viewControllers" id="NVm-dH-Ocu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ajw-Ps-wBP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -209,8 +166,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Mj-vp-O7h" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Відділення" image="map" catalog="system" id="Qju-ui-NiK"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fpt-ty-qtr">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Fpt-ty-qtr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -11,6 +11,8 @@
 		4749D5FC24CEB8F700797764 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D5FB24CEB8F700797764 /* NetworkService.swift */; };
 		4749D5FE24CEC1FE00797764 /* RateListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D5FD24CEC1FE00797764 /* RateListViewModel.swift */; };
 		4749D60024CEC31200797764 /* RateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D5FF24CEC31200797764 /* RateViewModel.swift */; };
+		4749D60224D1511B00797764 /* DepartamentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D60124D1511B00797764 /* DepartamentViewModel.swift */; };
+		4749D60424D1512B00797764 /* DepartamentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D60324D1512B00797764 /* DepartamentListViewModel.swift */; };
 		476AC38023D9E56100F31297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476AC37F23D9E56100F31297 /* AppDelegate.swift */; };
 		476AC38223D9E56100F31297 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476AC38123D9E56100F31297 /* SceneDelegate.swift */; };
 		476AC38423D9E56100F31297 /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476AC38323D9E56100F31297 /* RateView.swift */; };
@@ -19,9 +21,8 @@
 		476AC38C23D9E56300F31297 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 476AC38A23D9E56300F31297 /* LaunchScreen.storyboard */; };
 		47895D5F23D9EA8A00CC8D51 /* PrivatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47895D5E23D9EA8A00CC8D51 /* PrivatAPI.swift */; };
 		47895D6223DB69A500CC8D51 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47895D6123DB69A500CC8D51 /* Rate.swift */; };
-		47895D6623DB73F900CC8D51 /* BranchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47895D6523DB73F900CC8D51 /* BranchController.swift */; };
+		47895D6623DB73F900CC8D51 /* DepartamentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47895D6523DB73F900CC8D51 /* DepartamentView.swift */; };
 		47895D6823DB744C00CC8D51 /* Departament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47895D6723DB744C00CC8D51 /* Departament.swift */; };
-		47895D7123DCD42200CC8D51 /* CellForBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47895D7023DCD42200CC8D51 /* CellForBranch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		4749D5FB24CEB8F700797764 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = ../../../../NetworkService.swift; sourceTree = "<group>"; };
 		4749D5FD24CEC1FE00797764 /* RateListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RateListViewModel.swift; path = ../../../../../RateListViewModel.swift; sourceTree = "<group>"; };
 		4749D5FF24CEC31200797764 /* RateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RateViewModel.swift; path = ../../../../../RateViewModel.swift; sourceTree = "<group>"; };
+		4749D60124D1511B00797764 /* DepartamentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DepartamentViewModel.swift; path = ../../../../../DepartamentViewModel.swift; sourceTree = "<group>"; };
+		4749D60324D1512B00797764 /* DepartamentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DepartamentListViewModel.swift; path = ../../../../../DepartamentListViewModel.swift; sourceTree = "<group>"; };
 		476AC37C23D9E56100F31297 /* home_work_13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = home_work_13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		476AC37F23D9E56100F31297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		476AC38123D9E56100F31297 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +42,8 @@
 		476AC38D23D9E56300F31297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47895D5E23D9EA8A00CC8D51 /* PrivatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatAPI.swift; sourceTree = "<group>"; };
 		47895D6123DB69A500CC8D51 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
-		47895D6523DB73F900CC8D51 /* BranchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchController.swift; sourceTree = "<group>"; };
+		47895D6523DB73F900CC8D51 /* DepartamentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentView.swift; sourceTree = "<group>"; };
 		47895D6723DB744C00CC8D51 /* Departament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departament.swift; sourceTree = "<group>"; };
-		47895D7023DCD42200CC8D51 /* CellForBranch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForBranch.swift; sourceTree = "<group>"; };
 		B3428EF79E9A221DA9D6B7D8 /* Pods-home_work_13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home_work_13.debug.xcconfig"; path = "Target Support Files/Pods-home_work_13/Pods-home_work_13.debug.xcconfig"; sourceTree = "<group>"; };
 		FB96A8237CC6C622FA06B9D4 /* Pods-home_work_13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home_work_13.release.xcconfig"; path = "Target Support Files/Pods-home_work_13/Pods-home_work_13.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,8 +134,7 @@
 		4749D5F824CEB48A00797764 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				47895D6523DB73F900CC8D51 /* BranchController.swift */,
-				47895D6B23DB809E00CC8D51 /* Cell */,
+				47895D6523DB73F900CC8D51 /* DepartamentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -149,6 +150,8 @@
 		4749D5FA24CEB4A500797764 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4749D60324D1512B00797764 /* DepartamentListViewModel.swift */,
+				4749D60124D1511B00797764 /* DepartamentViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -201,14 +204,6 @@
 				4749D5FA24CEB4A500797764 /* ViewModels */,
 			);
 			path = DepartamentModule;
-			sourceTree = "<group>";
-		};
-		47895D6B23DB809E00CC8D51 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				47895D7023DCD42200CC8D51 /* CellForBranch.swift */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		EDCB778B9A6C45CD8BC05711 /* Frameworks */ = {
@@ -357,12 +352,13 @@
 				476AC38423D9E56100F31297 /* RateView.swift in Sources */,
 				476AC38023D9E56100F31297 /* AppDelegate.swift in Sources */,
 				47895D5F23D9EA8A00CC8D51 /* PrivatAPI.swift in Sources */,
-				47895D7123DCD42200CC8D51 /* CellForBranch.swift in Sources */,
-				47895D6623DB73F900CC8D51 /* BranchController.swift in Sources */,
+				47895D6623DB73F900CC8D51 /* DepartamentView.swift in Sources */,
+				4749D60224D1511B00797764 /* DepartamentViewModel.swift in Sources */,
 				4749D5FE24CEC1FE00797764 /* RateListViewModel.swift in Sources */,
 				476AC38223D9E56100F31297 /* SceneDelegate.swift in Sources */,
 				47895D6223DB69A500CC8D51 /* Rate.swift in Sources */,
 				4749D60024CEC31200797764 /* RateViewModel.swift in Sources */,
+				4749D60424D1512B00797764 /* DepartamentListViewModel.swift in Sources */,
 				47895D6823DB744C00CC8D51 /* Departament.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
