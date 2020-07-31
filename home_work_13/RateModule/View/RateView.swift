@@ -22,6 +22,14 @@ class RateView: UIViewController {
         return controller
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        viewModel.activityIndicator.asDriver()
+            .drive(UIApplication.shared.rx.isNetworkActivityIndicatorVisible)
+            .disposed(by: disposeBag)
+    }
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
 
