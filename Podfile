@@ -9,5 +9,6 @@ target 'home_work_13' do
   pod 'Moya/RxSwift', '~> 14.0'
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
+  pod "RxSwiftUtilities"
 
 end
