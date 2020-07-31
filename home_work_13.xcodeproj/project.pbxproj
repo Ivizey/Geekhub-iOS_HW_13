@@ -13,6 +13,8 @@
 		4749D60024CEC31200797764 /* RateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D5FF24CEC31200797764 /* RateViewModel.swift */; };
 		4749D60224D1511B00797764 /* DepartamentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D60124D1511B00797764 /* DepartamentViewModel.swift */; };
 		4749D60424D1512B00797764 /* DepartamentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D60324D1512B00797764 /* DepartamentListViewModel.swift */; };
+		4749D60724D2C27400797764 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D60624D2C27400797764 /* AppCoordinator.swift */; };
+		4749D60924D2CDCA00797764 /* RateListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D60824D2CDCA00797764 /* RateListCoordinator.swift */; };
 		476AC38023D9E56100F31297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476AC37F23D9E56100F31297 /* AppDelegate.swift */; };
 		476AC38223D9E56100F31297 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476AC38123D9E56100F31297 /* SceneDelegate.swift */; };
 		476AC38423D9E56100F31297 /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476AC38323D9E56100F31297 /* RateView.swift */; };
@@ -32,6 +34,8 @@
 		4749D5FF24CEC31200797764 /* RateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RateViewModel.swift; path = ../../../../../RateViewModel.swift; sourceTree = "<group>"; };
 		4749D60124D1511B00797764 /* DepartamentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DepartamentViewModel.swift; path = ../../../../../DepartamentViewModel.swift; sourceTree = "<group>"; };
 		4749D60324D1512B00797764 /* DepartamentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DepartamentListViewModel.swift; path = ../../../../../DepartamentListViewModel.swift; sourceTree = "<group>"; };
+		4749D60624D2C27400797764 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppCoordinator.swift; path = ../../../../AppCoordinator.swift; sourceTree = "<group>"; };
+		4749D60824D2CDCA00797764 /* RateListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RateListCoordinator.swift; path = ../../../../RateListCoordinator.swift; sourceTree = "<group>"; };
 		476AC37C23D9E56100F31297 /* home_work_13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = home_work_13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		476AC37F23D9E56100F31297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		476AC38123D9E56100F31297 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +160,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		4749D60524D2C24F00797764 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4749D60624D2C27400797764 /* AppCoordinator.swift */,
+				4749D60824D2CDCA00797764 /* RateListCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		476AC37323D9E56100F31297 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				4749D5F024CEB38800797764 /* Application */,
+				4749D60524D2C24F00797764 /* Coordinator */,
 				4749D5F324CEB3FB00797764 /* RateModule */,
 				47895D6423DB6EF400CC8D51 /* DepartamentModule */,
 				47895D6023D9EEFC00CC8D51 /* Service */,
@@ -349,7 +363,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4749D5FC24CEB8F700797764 /* NetworkService.swift in Sources */,
+				4749D60924D2CDCA00797764 /* RateListCoordinator.swift in Sources */,
 				476AC38423D9E56100F31297 /* RateView.swift in Sources */,
+				4749D60724D2C27400797764 /* AppCoordinator.swift in Sources */,
 				476AC38023D9E56100F31297 /* AppDelegate.swift in Sources */,
 				47895D5F23D9EA8A00CC8D51 /* PrivatAPI.swift in Sources */,
 				47895D6623DB73F900CC8D51 /* DepartamentView.swift in Sources */,

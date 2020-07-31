@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Departament: Decodable {
+struct Departament: Codable {
     let country: String
     let state: String
     let city: String

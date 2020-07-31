@@ -19,7 +19,7 @@ class DepartamentView: UIViewController {
         super.viewDidAppear(true)
 
         navigationItem.title = viewModel.title
-        viewModel.fetchDeparamentViewModels().observeOn(MainScheduler.instance)
+        viewModel.fetchDeparamentViewModels(city: "Киев").observeOn(MainScheduler.instance)
         .bind(to: departamentTableView.rx.items(cellIdentifier: "departamentCell")) { _, viewModel, cell in
             cell.textLabel?.numberOfLines = 0
             cell.detailTextLabel?.numberOfLines = 0

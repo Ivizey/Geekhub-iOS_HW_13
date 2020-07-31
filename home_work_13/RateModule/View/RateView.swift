@@ -13,7 +13,14 @@ import RxCocoa
 class RateView: UIViewController {
     @IBOutlet private weak var rateTableView: UITableView!
     private let disposeBag = DisposeBag()
-    private let viewModel = RateListViewModel()
+    private var viewModel: RateListViewModel!
+
+    static func instantiate(viewModel: RateListViewModel) -> RateView {
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let controller = storyboard.instantiateViewController(identifier: "RateView") as RateView
+        controller.viewModel = viewModel
+        return controller
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
@@ -21,6 +28,7 @@ class RateView: UIViewController {
         navigationItem.title = viewModel.title
         viewModel.fetchRateViewModels().observeOn(MainScheduler.instance)
         .bind(to: rateTableView.rx.items(cellIdentifier: "rateCell")) { _, viewModel, cell in
+            cell.imageView?.tintColor = .black
             cell.imageView?.image = viewModel.displayImage
             cell.textLabel?.attributedText = viewModel.displayСurrency
             cell.detailTextLabel?.numberOfLines = 0
