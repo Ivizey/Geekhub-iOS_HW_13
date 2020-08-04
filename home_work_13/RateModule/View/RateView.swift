@@ -13,18 +13,12 @@ import RxCocoa
 class RateView: UIViewController {
     @IBOutlet private weak var rateTableView: UITableView!
     private let disposeBag = DisposeBag()
-    private var viewModel: RateListViewModel!
-
-    static func instantiate(viewModel: RateListViewModel) -> RateView {
-        let storyboard = UIStoryboard(name: "Main", bundle: .main)
-        let controller = storyboard.instantiateViewController(identifier: "RateView") as RateView
-        controller.viewModel = viewModel
-        return controller
-    }
+    internal var viewModel: RateListViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.title = viewModel.title
         viewModel.activityIndicator.asDriver()
             .drive(UIApplication.shared.rx.isNetworkActivityIndicatorVisible)
             .disposed(by: disposeBag)
@@ -33,7 +27,7 @@ class RateView: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
 
-        navigationItem.title = viewModel.title
+        rateTableView.dataSource = nil
         viewModel.fetchRateViewModels().observeOn(MainScheduler.instance)
         .bind(to: rateTableView.rx.items(cellIdentifier: "rateCell")) { _, viewModel, cell in
             cell.imageView?.tintColor = .black

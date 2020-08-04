@@ -13,8 +13,13 @@
 		4749D60024CEC31200797764 /* RateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D5FF24CEC31200797764 /* RateViewModel.swift */; };
 		4749D60224D1511B00797764 /* DepartamentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D60124D1511B00797764 /* DepartamentViewModel.swift */; };
 		4749D60424D1512B00797764 /* DepartamentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D60324D1512B00797764 /* DepartamentListViewModel.swift */; };
-		4749D60724D2C27400797764 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D60624D2C27400797764 /* AppCoordinator.swift */; };
-		4749D60924D2CDCA00797764 /* RateListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D60824D2CDCA00797764 /* RateListCoordinator.swift */; };
+		4749D61224D43CD300797764 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D61124D43CD300797764 /* UIViewController+Extensions.swift */; };
+		4749D61524D7E13500797764 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D61424D7E13500797764 /* AppCoordinator.swift */; };
+		4749D61724D7E17100797764 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D61624D7E17100797764 /* Coordinator.swift */; };
+		4749D61924D7E31F00797764 /* RateListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D61824D7E31F00797764 /* RateListCoordinator.swift */; };
+		4749D61B24D7E67900797764 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D61A24D7E67900797764 /* TabBarCoordinator.swift */; };
+		4749D61D24D7E75A00797764 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D61C24D7E75A00797764 /* TabBarView.swift */; };
+		4749D61F24D7EEDC00797764 /* DepartamentListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D61E24D7EEDC00797764 /* DepartamentListCoordinator.swift */; };
 		476AC38023D9E56100F31297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476AC37F23D9E56100F31297 /* AppDelegate.swift */; };
 		476AC38223D9E56100F31297 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476AC38123D9E56100F31297 /* SceneDelegate.swift */; };
 		476AC38423D9E56100F31297 /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476AC38323D9E56100F31297 /* RateView.swift */; };
@@ -34,8 +39,13 @@
 		4749D5FF24CEC31200797764 /* RateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RateViewModel.swift; path = ../../../../../RateViewModel.swift; sourceTree = "<group>"; };
 		4749D60124D1511B00797764 /* DepartamentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DepartamentViewModel.swift; path = ../../../../../DepartamentViewModel.swift; sourceTree = "<group>"; };
 		4749D60324D1512B00797764 /* DepartamentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DepartamentListViewModel.swift; path = ../../../../../DepartamentListViewModel.swift; sourceTree = "<group>"; };
-		4749D60624D2C27400797764 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppCoordinator.swift; path = ../../../../AppCoordinator.swift; sourceTree = "<group>"; };
-		4749D60824D2CDCA00797764 /* RateListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RateListCoordinator.swift; path = ../../../../RateListCoordinator.swift; sourceTree = "<group>"; };
+		4749D61124D43CD300797764 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "../../../../UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		4749D61424D7E13500797764 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppCoordinator.swift; path = ../../../../AppCoordinator.swift; sourceTree = "<group>"; };
+		4749D61624D7E17100797764 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = ../../../../Coordinator.swift; sourceTree = "<group>"; };
+		4749D61824D7E31F00797764 /* RateListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RateListCoordinator.swift; path = ../../../../RateListCoordinator.swift; sourceTree = "<group>"; };
+		4749D61A24D7E67900797764 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarCoordinator.swift; path = ../../../../TabBarCoordinator.swift; sourceTree = "<group>"; };
+		4749D61C24D7E75A00797764 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		4749D61E24D7EEDC00797764 /* DepartamentListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentListCoordinator.swift; sourceTree = "<group>"; };
 		476AC37C23D9E56100F31297 /* home_work_13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = home_work_13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		476AC37F23D9E56100F31297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		476AC38123D9E56100F31297 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,13 +170,40 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		4749D60524D2C24F00797764 /* Coordinator */ = {
+		4749D60C24D43ABF00797764 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4749D60624D2C27400797764 /* AppCoordinator.swift */,
-				4749D60824D2CDCA00797764 /* RateListCoordinator.swift */,
+				4749D61124D43CD300797764 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4749D61324D7E02D00797764 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4749D61624D7E17100797764 /* Coordinator.swift */,
+				4749D61424D7E13500797764 /* AppCoordinator.swift */,
+				4749D61A24D7E67900797764 /* TabBarCoordinator.swift */,
+				4749D61824D7E31F00797764 /* RateListCoordinator.swift */,
+				4749D61E24D7EEDC00797764 /* DepartamentListCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4749D62424D94E2800797764 /* TabBarModule */ = {
+			isa = PBXGroup;
+			children = (
+				4749D62524D94E3900797764 /* View */,
+			);
+			path = TabBarModule;
+			sourceTree = "<group>";
+		};
+		4749D62524D94E3900797764 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4749D61C24D7E75A00797764 /* TabBarView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		476AC37323D9E56100F31297 = {
@@ -191,12 +228,14 @@
 			isa = PBXGroup;
 			children = (
 				4749D5F024CEB38800797764 /* Application */,
-				4749D60524D2C24F00797764 /* Coordinator */,
+				4749D61324D7E02D00797764 /* Coordinator */,
 				4749D5F324CEB3FB00797764 /* RateModule */,
 				47895D6423DB6EF400CC8D51 /* DepartamentModule */,
+				4749D62424D94E2800797764 /* TabBarModule */,
 				47895D6023D9EEFC00CC8D51 /* Service */,
 				4749D5F124CEB3DB00797764 /* Storyboards */,
 				4749D5F224CEB3E900797764 /* Resources */,
+				4749D60C24D43ABF00797764 /* Extensions */,
 			);
 			path = home_work_13;
 			sourceTree = "<group>";
@@ -363,12 +402,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4749D5FC24CEB8F700797764 /* NetworkService.swift in Sources */,
-				4749D60924D2CDCA00797764 /* RateListCoordinator.swift in Sources */,
+				4749D61F24D7EEDC00797764 /* DepartamentListCoordinator.swift in Sources */,
+				4749D61524D7E13500797764 /* AppCoordinator.swift in Sources */,
 				476AC38423D9E56100F31297 /* RateView.swift in Sources */,
-				4749D60724D2C27400797764 /* AppCoordinator.swift in Sources */,
+				4749D61224D43CD300797764 /* UIViewController+Extensions.swift in Sources */,
 				476AC38023D9E56100F31297 /* AppDelegate.swift in Sources */,
 				47895D5F23D9EA8A00CC8D51 /* PrivatAPI.swift in Sources */,
+				4749D61724D7E17100797764 /* Coordinator.swift in Sources */,
 				47895D6623DB73F900CC8D51 /* DepartamentView.swift in Sources */,
+				4749D61924D7E31F00797764 /* RateListCoordinator.swift in Sources */,
 				4749D60224D1511B00797764 /* DepartamentViewModel.swift in Sources */,
 				4749D5FE24CEC1FE00797764 /* RateListViewModel.swift in Sources */,
 				476AC38223D9E56100F31297 /* SceneDelegate.swift in Sources */,
@@ -376,6 +418,8 @@
 				4749D60024CEC31200797764 /* RateViewModel.swift in Sources */,
 				4749D60424D1512B00797764 /* DepartamentListViewModel.swift in Sources */,
 				47895D6823DB744C00CC8D51 /* Departament.swift in Sources */,
+				4749D61D24D7E75A00797764 /* TabBarView.swift in Sources */,
+				4749D61B24D7E67900797764 /* TabBarCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +571,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geeknub.home-work-13";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -546,6 +591,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geeknub.home-work-13";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
