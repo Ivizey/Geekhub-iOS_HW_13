@@ -10,7 +10,7 @@ import Moya
 
 enum PrivatAPI {
     case getRate
-    case getBranches(search: String)
+    case getDepartament(search: String)
 }
 
 extension PrivatAPI: TargetType {
@@ -22,7 +22,7 @@ extension PrivatAPI: TargetType {
         switch self {
         case .getRate:
             return "pubinfo"
-        case .getBranches:
+        case .getDepartament:
             return "pboffice"
         }
     }
@@ -38,19 +38,15 @@ extension PrivatAPI: TargetType {
     var task: Task {
         switch self {
         case .getRate:
-            return .requestParameters(parameters: ["exchange": "",
-                                                   "json": "",
-                                                   "coursid": "11"],
+            return .requestParameters(parameters: ["exchange": "", "json": "", "coursid": "11"],
                                       encoding: URLEncoding.queryString)
-        case .getBranches(search: let search):
-            return .requestParameters(parameters: ["json": "",
-                                                   "city": search,
-                                                   "address": ""],
+        case .getDepartament(let search):
+            return .requestParameters(parameters: ["json": "", "city": search],
                                       encoding: URLEncoding.queryString)
         }
     }
 
     var headers: [String: String]? {
-        return ["Content-type": "aplication/json"]
+        return nil
     }
 }
