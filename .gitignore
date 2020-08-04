@@ -10,10 +10,9 @@ xcuserdata/
 *.xcscmblueprint
 *.xccheckout
 
-*.md
-*.png
 *.xcworkspace
 *.xcuserstate
+*.xcodeproj
 
 
 ## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
