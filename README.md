@@ -20,8 +20,7 @@ A mobile application to keep track of the current exchange rate, as well as view
     <img src="https://www.ukrainatour.com/images/content_pages//privatbank.jpg">
 </p>
 
-Authentication is handled with a simple API.
-They're free for development, open-source, and non-commercial use, and you can get one here: [get Privat24 API](https://api.privatbank.ua/#p24/exchange).
+API free for development, open-source, and non-commercial use, and you can get one here: [get Privat24 API](https://api.privatbank.ua/#p24/exchange).
 
 # Installation
 1. Install Cocoapods: sudo gem install cocoapods
