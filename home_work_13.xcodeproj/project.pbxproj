@@ -8,16 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4500E3ADFAEE73B996B7E890 /* Pods_home_work_13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6F480043B05AE9E0F8E5C6 /* Pods_home_work_13.framework */; };
-		4749D5FC24CEB8F700797764 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D5FB24CEB8F700797764 /* NetworkService.swift */; };
-		4749D5FE24CEC1FE00797764 /* RateListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D5FD24CEC1FE00797764 /* RateListViewModel.swift */; };
-		4749D60024CEC31200797764 /* RateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D5FF24CEC31200797764 /* RateViewModel.swift */; };
-		4749D60224D1511B00797764 /* DepartamentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D60124D1511B00797764 /* DepartamentViewModel.swift */; };
-		4749D60424D1512B00797764 /* DepartamentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D60324D1512B00797764 /* DepartamentListViewModel.swift */; };
-		4749D61224D43CD300797764 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D61124D43CD300797764 /* UIViewController+Extensions.swift */; };
-		4749D61524D7E13500797764 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D61424D7E13500797764 /* AppCoordinator.swift */; };
-		4749D61724D7E17100797764 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D61624D7E17100797764 /* Coordinator.swift */; };
-		4749D61924D7E31F00797764 /* RateListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D61824D7E31F00797764 /* RateListCoordinator.swift */; };
-		4749D61B24D7E67900797764 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D61A24D7E67900797764 /* TabBarCoordinator.swift */; };
 		4749D61D24D7E75A00797764 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D61C24D7E75A00797764 /* TabBarView.swift */; };
 		4749D61F24D7EEDC00797764 /* DepartamentListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749D61E24D7EEDC00797764 /* DepartamentListCoordinator.swift */; };
 		476AC38023D9E56100F31297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476AC37F23D9E56100F31297 /* AppDelegate.swift */; };
@@ -30,20 +20,20 @@
 		47895D6223DB69A500CC8D51 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47895D6123DB69A500CC8D51 /* Rate.swift */; };
 		47895D6623DB73F900CC8D51 /* DepartamentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47895D6523DB73F900CC8D51 /* DepartamentView.swift */; };
 		47895D6823DB744C00CC8D51 /* Departament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47895D6723DB744C00CC8D51 /* Departament.swift */; };
+		47CFD41E24DBE081003111AA /* RateListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFD41D24DBE081003111AA /* RateListViewModel.swift */; };
+		47CFD42024DBE0CD003111AA /* RateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFD41F24DBE0CD003111AA /* RateViewModel.swift */; };
+		47CFD42224DBE1A7003111AA /* DepartamentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFD42124DBE1A7003111AA /* DepartamentListViewModel.swift */; };
+		47CFD42424DBE1C9003111AA /* DepartamentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFD42324DBE1C9003111AA /* DepartamentViewModel.swift */; };
+		47CFD42624DBE21E003111AA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFD42524DBE21E003111AA /* NetworkService.swift */; };
+		47CFD42824DBE27A003111AA /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFD42724DBE27A003111AA /* TabBarCoordinator.swift */; };
+		47CFD42A24DBE2B2003111AA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFD42924DBE2B2003111AA /* Coordinator.swift */; };
+		47CFD42C24DBE2D5003111AA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFD42B24DBE2D5003111AA /* AppCoordinator.swift */; };
+		47CFD42E24DBE2F4003111AA /* RateListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFD42D24DBE2F4003111AA /* RateListCoordinator.swift */; };
+		47CFD43024DBE36E003111AA /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFD42F24DBE36E003111AA /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C6F480043B05AE9E0F8E5C6 /* Pods_home_work_13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_home_work_13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4749D5FB24CEB8F700797764 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = ../../../../NetworkService.swift; sourceTree = "<group>"; };
-		4749D5FD24CEC1FE00797764 /* RateListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RateListViewModel.swift; path = ../../../../../RateListViewModel.swift; sourceTree = "<group>"; };
-		4749D5FF24CEC31200797764 /* RateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RateViewModel.swift; path = ../../../../../RateViewModel.swift; sourceTree = "<group>"; };
-		4749D60124D1511B00797764 /* DepartamentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DepartamentViewModel.swift; path = ../../../../../DepartamentViewModel.swift; sourceTree = "<group>"; };
-		4749D60324D1512B00797764 /* DepartamentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DepartamentListViewModel.swift; path = ../../../../../DepartamentListViewModel.swift; sourceTree = "<group>"; };
-		4749D61124D43CD300797764 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "../../../../UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		4749D61424D7E13500797764 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppCoordinator.swift; path = ../../../../AppCoordinator.swift; sourceTree = "<group>"; };
-		4749D61624D7E17100797764 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = ../../../../Coordinator.swift; sourceTree = "<group>"; };
-		4749D61824D7E31F00797764 /* RateListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RateListCoordinator.swift; path = ../../../../RateListCoordinator.swift; sourceTree = "<group>"; };
-		4749D61A24D7E67900797764 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarCoordinator.swift; path = ../../../../TabBarCoordinator.swift; sourceTree = "<group>"; };
 		4749D61C24D7E75A00797764 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		4749D61E24D7EEDC00797764 /* DepartamentListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentListCoordinator.swift; sourceTree = "<group>"; };
 		476AC37C23D9E56100F31297 /* home_work_13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = home_work_13.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +48,16 @@
 		47895D6123DB69A500CC8D51 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
 		47895D6523DB73F900CC8D51 /* DepartamentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentView.swift; sourceTree = "<group>"; };
 		47895D6723DB744C00CC8D51 /* Departament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departament.swift; sourceTree = "<group>"; };
+		47CFD41D24DBE081003111AA /* RateListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateListViewModel.swift; sourceTree = "<group>"; };
+		47CFD41F24DBE0CD003111AA /* RateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewModel.swift; sourceTree = "<group>"; };
+		47CFD42124DBE1A7003111AA /* DepartamentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentListViewModel.swift; sourceTree = "<group>"; };
+		47CFD42324DBE1C9003111AA /* DepartamentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentViewModel.swift; sourceTree = "<group>"; };
+		47CFD42524DBE21E003111AA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		47CFD42724DBE27A003111AA /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		47CFD42924DBE2B2003111AA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		47CFD42B24DBE2D5003111AA /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		47CFD42D24DBE2F4003111AA /* RateListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateListCoordinator.swift; sourceTree = "<group>"; };
+		47CFD42F24DBE36E003111AA /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		B3428EF79E9A221DA9D6B7D8 /* Pods-home_work_13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home_work_13.debug.xcconfig"; path = "Target Support Files/Pods-home_work_13/Pods-home_work_13.debug.xcconfig"; sourceTree = "<group>"; };
 		FB96A8237CC6C622FA06B9D4 /* Pods-home_work_13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home_work_13.release.xcconfig"; path = "Target Support Files/Pods-home_work_13/Pods-home_work_13.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,8 +139,8 @@
 		4749D5F724CEB43D00797764 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				4749D5FD24CEC1FE00797764 /* RateListViewModel.swift */,
-				4749D5FF24CEC31200797764 /* RateViewModel.swift */,
+				47CFD41D24DBE081003111AA /* RateListViewModel.swift */,
+				47CFD41F24DBE0CD003111AA /* RateViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -164,8 +164,8 @@
 		4749D5FA24CEB4A500797764 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				4749D60324D1512B00797764 /* DepartamentListViewModel.swift */,
-				4749D60124D1511B00797764 /* DepartamentViewModel.swift */,
+				47CFD42124DBE1A7003111AA /* DepartamentListViewModel.swift */,
+				47CFD42324DBE1C9003111AA /* DepartamentViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -173,7 +173,7 @@
 		4749D60C24D43ABF00797764 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4749D61124D43CD300797764 /* UIViewController+Extensions.swift */,
+				47CFD42F24DBE36E003111AA /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -181,10 +181,10 @@
 		4749D61324D7E02D00797764 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				4749D61624D7E17100797764 /* Coordinator.swift */,
-				4749D61424D7E13500797764 /* AppCoordinator.swift */,
-				4749D61A24D7E67900797764 /* TabBarCoordinator.swift */,
-				4749D61824D7E31F00797764 /* RateListCoordinator.swift */,
+				47CFD42924DBE2B2003111AA /* Coordinator.swift */,
+				47CFD42B24DBE2D5003111AA /* AppCoordinator.swift */,
+				47CFD42724DBE27A003111AA /* TabBarCoordinator.swift */,
+				47CFD42D24DBE2F4003111AA /* RateListCoordinator.swift */,
 				4749D61E24D7EEDC00797764 /* DepartamentListCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -243,8 +243,8 @@
 		47895D6023D9EEFC00CC8D51 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				4749D5FB24CEB8F700797764 /* NetworkService.swift */,
 				47895D5E23D9EA8A00CC8D51 /* PrivatAPI.swift */,
+				47CFD42524DBE21E003111AA /* NetworkService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -401,25 +401,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4749D5FC24CEB8F700797764 /* NetworkService.swift in Sources */,
+				47CFD42424DBE1C9003111AA /* DepartamentViewModel.swift in Sources */,
 				4749D61F24D7EEDC00797764 /* DepartamentListCoordinator.swift in Sources */,
-				4749D61524D7E13500797764 /* AppCoordinator.swift in Sources */,
+				47CFD42824DBE27A003111AA /* TabBarCoordinator.swift in Sources */,
 				476AC38423D9E56100F31297 /* RateView.swift in Sources */,
-				4749D61224D43CD300797764 /* UIViewController+Extensions.swift in Sources */,
 				476AC38023D9E56100F31297 /* AppDelegate.swift in Sources */,
+				47CFD42C24DBE2D5003111AA /* AppCoordinator.swift in Sources */,
+				47CFD43024DBE36E003111AA /* UIViewController+Extensions.swift in Sources */,
 				47895D5F23D9EA8A00CC8D51 /* PrivatAPI.swift in Sources */,
-				4749D61724D7E17100797764 /* Coordinator.swift in Sources */,
 				47895D6623DB73F900CC8D51 /* DepartamentView.swift in Sources */,
-				4749D61924D7E31F00797764 /* RateListCoordinator.swift in Sources */,
-				4749D60224D1511B00797764 /* DepartamentViewModel.swift in Sources */,
-				4749D5FE24CEC1FE00797764 /* RateListViewModel.swift in Sources */,
+				47CFD42E24DBE2F4003111AA /* RateListCoordinator.swift in Sources */,
+				47CFD42024DBE0CD003111AA /* RateViewModel.swift in Sources */,
 				476AC38223D9E56100F31297 /* SceneDelegate.swift in Sources */,
+				47CFD42A24DBE2B2003111AA /* Coordinator.swift in Sources */,
 				47895D6223DB69A500CC8D51 /* Rate.swift in Sources */,
-				4749D60024CEC31200797764 /* RateViewModel.swift in Sources */,
-				4749D60424D1512B00797764 /* DepartamentListViewModel.swift in Sources */,
+				47CFD41E24DBE081003111AA /* RateListViewModel.swift in Sources */,
 				47895D6823DB744C00CC8D51 /* Departament.swift in Sources */,
+				47CFD42624DBE21E003111AA /* NetworkService.swift in Sources */,
 				4749D61D24D7E75A00797764 /* TabBarView.swift in Sources */,
-				4749D61B24D7E67900797764 /* TabBarCoordinator.swift in Sources */,
+				47CFD42224DBE1A7003111AA /* DepartamentListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

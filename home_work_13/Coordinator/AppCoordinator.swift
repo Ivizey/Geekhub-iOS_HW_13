@@ -6,4 +6,23 @@
 //  Copyright © 2020 Pavel Bondar. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class AppCoordinator: Coordinator {
+    let window: UIWindow
+    
+    init(window: UIWindow) {
+        self.window = window
+    }
+    
+    func start() {
+        let navigationController = UINavigationController()
+        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.navigationItem.largeTitleDisplayMode = .always
+        window.rootViewController = navigationController
+        window.makeKeyAndVisible()
+
+        let tabBarCoordinator = TabBarCoordinator(navigationController: navigationController)
+        coordinate(to: tabBarCoordinator)
+    }
+}

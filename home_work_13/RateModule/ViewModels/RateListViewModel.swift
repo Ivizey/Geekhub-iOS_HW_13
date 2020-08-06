@@ -7,3 +7,23 @@
 //
 
 import Foundation
+import RxSwift
+import RxSwiftUtilities
+
+final class RateListViewModel {
+    private let networkService: NetworkServiceProtocol
+    let title = "Курс валют"
+    let activityIndicator = ActivityIndicator()
+    
+    init(networkService: NetworkServiceProtocol = NetworkService()) {
+        self.networkService = networkService
+    }
+    
+    func fetchRateViewModels() -> Observable<[RateViewModel]> {
+        networkService.fetchRate().map { $0.map {
+            RateViewModel(rate: $0)
+            }
+        }
+        .trackActivity(activityIndicator)
+    }
+}
